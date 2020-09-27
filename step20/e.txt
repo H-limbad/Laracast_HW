@@ -1,0 +1,20 @@
+/*
+$host = "localhost";
+$username = "root";
+$password = "";
+$databse = "registration";
+
+try
+{
+    $connect = new PDO("mysql:host=$host;dbname=$databse",$username,$password);
+    $connect->setAttibute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "success";
+}catch(PDOException $e){
+    echo $e->getMessage();
+}
+$sql = "INSERT INTO login (username) VALUES (:username)";
+$stmt = $pdo->prepare($sql);
+$stmt->execute(['username'=>$username]);
+*/
+<?php
+?>
